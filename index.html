@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--aqui esta el encabezado-->
+    <header class="header">
+        <h1 id="title" class="text-center">Formulario de Historia</h1>
+        <p id="description" class="description text-center">Gracias por tomarte el tiempo de llenar el formulario</p>
+
+    </header> <!--termina el encabezado-->
+
+    <form id="survey-form">
+
+        <div class="form-group">
+            <label id="name-label" for="name">Nombre</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Ingresa tu nombre" required/>
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu email" required/>
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number">Edad<span class="clue">(Opcional)</span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Edad" />
+        </div>
+        <!--Comienza la primera parte de la encuesta-->
+        <div class="form-group">
+            <p>¿Qué opción describe mejor su función actual?</p>
+            <select name="role" id="dropdown" class="form-control" required>
+                <option disabled selected value>Seleccionar la funcion actual</option>
+                <option value="Estudiante">Estudiante</option>
+                <option value="Trabajo">Trabajo a jornada completa</option>
+                <option value="Aprendiz">Aprendiz a tiempo completo</option>
+                <option value="preferNo">Prefiero no decir</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div> <!--termina la primera parte-->
+
+        <!--primera pregunta de historia  -->
+        <div class="form-group">
+            <p>En que país se desarrollo la revolución industrial?</p>
+            <label >
+            <input name="usuario-visto" value="Francia" type="radio" class="input-radio" checked />Francia</label>
+
+            <label >
+                <input name="usuario-visto" value="inglaterra" type="radio" class="input-radio" checked>Inglaterra
+            </label>
+
+            <label >
+                <input name="usuario-visto" value="Estados-Unidos" type="radio" class="input-radio" checked>Estados Unidos
+            </label>
+        </div>
+            <!--segunda pregunta de la encuesta-->
+        <div class="form-group">
+            <p>En qué fecha llego Cristobal Colon al continente americano</p>
+            <select name="mostLike" id="most-like" class="form-control" required >
+                <option disabled selected value=>Selecciona una opción</option>
+                <option value="4 de Julio de 1775">4 de Julio de 1775</option>
+                <option value="24 de mayo de 1822">24 de mayo de 1822</option>
+                <option value="7 de septiembre de 1822">7 de septiembre de 1822</option>
+                <option value="12 de octubre de 1492">12 de octubre de 1492</option>
+                <option value="29 de mayo de 1453">29 de mayo de 1453 </option>
+                <option value="9 de noviembre de 1989">9 de noviembre de 1989</option>
+
+            </select>
+        </div>
+
+            <!--tercera pregunta de la encuesta-->
+
+        <div class="form-group">
+            <p>
+                Cuáles fueron los países que formaron parte del grupo del eje en la segunda guerra mundial?
+                <span class="clue">(Selecciona las respuestas correctas)</span>
+            </p>
+
+            <label >
+                <input type="checkbox" name="prefer" value="Francia" class="input-checkbox">Francia
+            </label>
+
+            <label>
+                <input type="checkbox" name="prefer" value="Países Bajos" class="input-checkbox">Países Bajos
+            </label>
+
+            <label >
+                <input type="checkbox" name="prefer" value="Italia" class="input-checkbox">Italia
+            </label>
+
+            <label >
+                <input type="checkbox" name="prefer" value="Belgica" class="input-checkbox">Belgica
+            </label>
+
+            <label >
+                <input type="checkbox" name="prefer" value="Japón" class="input-checkbox">Japón
+            </label>
+
+            <label>
+                <input type="checkbox" name="prefer" value="Rusia" class="input-checkbox">Rusia
+            </label>
+
+            <label>
+                <input type="checkbox" name="prefer" value="Alemania" class="input-checkbox">Alemania
+            </label>
+
+            <label >
+                <input type="checkbox" name="prefer" value="Estados Unidos" class="input-checkbox">Estados Unidos
+            </label>
+
+            <label >
+                <input type="checkbox" name="prefer" value="Inglaterra" class="input-checkbox">Inglaterra
+            </label>
+        </div>
+
+        <!--Sugerencias-->
+        <div class="form-group">
+            <p>Tus comentarios y sugerencias son bienvenidos</p>
+            <textarea name="comment" id="comments" placeholder="Escribe un comentario o sugerencia..." class="input-textarea"></textarea>
+        </div>
+
+        <!--Boton de enviar-->
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Enviar</button>
+        </div>
+    </form>
+
+
+
+</body>
+</html>
